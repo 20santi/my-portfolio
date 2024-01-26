@@ -6,11 +6,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import avatar from "../../public/images/avatar-1.png";
+import Image from "next/image";
 
 const navLinks = [
   {
@@ -31,12 +30,16 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
-      <div className="flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="flex flex-wrap items-center justify-between mx-auto p-2">
         <Link
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          <Image
+            src={avatar}
+            alt="avatar"
+            className="w-[70px] h-[70px]"
+          />
         </Link>
         <div className="block md:hidden">
           <Sheet className="border border-slate-800 text-white">

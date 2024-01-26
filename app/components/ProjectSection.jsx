@@ -8,6 +8,7 @@ const projectsData = [
     id: 1,
     title: "React Portfolio Website",
     description: "portfolio website for showcasing my skills and projects",
+    detailDescription: "",
     image: "/images/projects/1.png",
     gitUrl: "/",
     previewUrl: "/",
@@ -15,24 +16,24 @@ const projectsData = [
   {
     id: 2,
     title: "Twitter clone project",
-    description: "Twitter clone project where user share their post and like, comment on other post. See others profile",
+    description: "Twitter clone project where user share their post and like, comment on other post.",
     image: "/images/projects/2.png",
-    gitUrl: "/",
+    gitUrl: "https://github.com/20santi/twitter-backend",
     previewUrl: "/",
   },
   {
     id: 3,
     title: "OrganLink",
-    description: "A website for hospital and doners which connect hospitals and doners without any cost",
+    description: "A website for hospital and doners which connect hospitals and doners free of cost",
     image: "/images/projects/3.png",
-    gitUrl: "/",
+    gitUrl: "https://github.com/20santi/OrganDonHackathon",
     previewUrl: "/",
   },
 ];
 
 const ProjectsSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref);
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
@@ -57,6 +58,8 @@ const ProjectsSection = () => {
               key={project.id}
               title={project.title}
               description={project.description}
+              detailDescription={project.detailDescription}
+              tecStack={project.tecStack}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
