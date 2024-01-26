@@ -1,30 +1,29 @@
 "use client";
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
-    description: "Project 1 description",
+    description: "portfolio website for showcasing my skills and projects",
     image: "/images/projects/1.png",
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Twitter clone project",
+    description: "Twitter clone project where user share their post and like, comment on other post. See others profile",
     image: "/images/projects/2.png",
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "OrganLink",
+    description: "A website for hospital and doners which connect hospitals and doners without any cost",
     image: "/images/projects/3.png",
     gitUrl: "/",
     previewUrl: "/",
