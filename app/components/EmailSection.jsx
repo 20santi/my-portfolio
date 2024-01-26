@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
 const EmailSection = () => {
@@ -53,11 +54,14 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
-            <FaGithub />
+          <Link href="https://github.com/20santi">
+            <FaGithub className="text-4xl"/>
           </Link>
-          <Link href="linkedin.com">
-            <FaLinkedin />
+          <Link href="https://www.linkedin.com/in/santi-singha">
+            <FaLinkedin className="text-4xl"/>
+          </Link>
+          <Link href="https://twitter.com/santi3012139331">
+            <FaSquareXTwitter className="text-4xl"/>
           </Link>
         </div>
       </div>

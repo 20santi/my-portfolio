@@ -6,6 +6,7 @@ import AchievementsSection from "./components/AchievementsSection";
 import ProjectsSection from "./components/ProjectSection";
 import EmailSection from "./components/EmailSection";
 import { RecoilRoot } from "recoil";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <EmailSection />
         </RecoilRoot>
       </div>
+      <Footer/>
     </main>
   );
 }
