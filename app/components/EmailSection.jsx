@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin  } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
 const EmailSection = () => {
@@ -29,10 +29,9 @@ const EmailSection = () => {
     };
 
     const response = await fetch(endpoint, options);
-    const resData = await response.json();
 
     if (response.status === 200) {
-      console.log("Message sent.");
+      console.log("Message sent. ", response);
       setEmailSubmitted(true);
     }
   };
@@ -55,7 +54,7 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="github.com">
-            <FaGithub/>
+            <FaGithub />
           </Link>
           <Link href="linkedin.com">
             <FaLinkedin />

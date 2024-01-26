@@ -1,3 +1,4 @@
+"use client"
 const { atom } = require("recoil");
 
 export const email = atom({
