@@ -2,7 +2,7 @@
 "use client"
 import Image from "next/image";
 import React from "react";
-import hero from "../../public/hero-image.png";
+import hero from "../../public/images/hero-image.png";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
