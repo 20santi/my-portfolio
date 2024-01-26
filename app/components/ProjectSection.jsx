@@ -10,7 +10,7 @@ const projectsData = [
     description: "portfolio website for showcasing my skills and projects",
     detailDescription: "",
     image: "/images/projects/1.png",
-    gitUrl: "/",
+    gitUrl: "https://github.com/20santi/my-portfolio",
     previewUrl: "/",
   },
   {
