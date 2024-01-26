@@ -6,6 +6,12 @@ import hero from "../../public/images/hero-image.png";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
+  const handleDownloadCV = () => {
+    const cvUrl = "/Santi_Singha_Resume.pdf";
+    // Trigger download
+    window.open(cvUrl, "_blank");
+  };
+
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -22,14 +28,17 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            Helllo
+          <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 mt-2">
+            Hey there, I'm Santi, and I'm all about bringing ideas to life on
+            the web! As a full-stack developer, I love diving into both the
+            front and back ends of websites.
           </p>
           <div className="">
             <button className="px-6 py-3 sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
               Hire Me
             </button>
             <button
+              onClick={handleDownloadCV}
               className="px-1 py-1 sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">

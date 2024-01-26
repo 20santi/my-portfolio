@@ -6,36 +6,41 @@ import aboutImage from "../../public/images/about-image.png";
 
 const TAB_DATA = [
   {
-    title: "Skills",
+    title: "Technical Skills",
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
         <li>Node.js</li>
         <li>Express</li>
         <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
+        <li>Mongo DB</li>
         <li>React</li>
+        <li>Next Js</li>
+        <li>Graphql</li>
+        <li>Prisma ORM</li>
       </ul>
     ),
   },
   {
-    title: "Education",
-    id: "education",
+    title: "Languages",
+    id: "languages",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>TypeScript</li>
+        <li>JavaScript</li>
+        <li>C++</li>
+        <li>Python</li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Tools",
+    id: "tools",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Git</li>
+        <li>Github</li>
+        <li>Docker</li>
       </ul>
     ),
   },
@@ -71,21 +76,21 @@ const AboutSection = () => {
               active={tab === "skills"}
             >
               {" "}
-              Skills{" "}
+              Technical Skills{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
+              selectTab={() => handleTabChange("languages")}
+              active={tab === "languages"}
             >
               {" "}
-              Education{" "}
+              Languages{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("tools")}
+              active={tab === "tools"}
             >
               {" "}
-              Certifications{" "}
+              Tools{" "}
             </TabButton>
           </div>
           <div className="mt-8">
